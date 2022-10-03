@@ -25,9 +25,9 @@ namespace AP1_P1_FrankYeuri.BLL
     }
     public bool Guardar(Aportes aportes){
         if(!Existe(aportes.AportesId))
-        return this.Insertar(aportes);
+            return this.Insertar(aportes);
         else
-        return this.Modificar(aportes);
+         return this.Modificar(aportes);
     }
     public bool Eliminar(Aportes aportes){
         _contexto.Entry(aportes).State = EntityState.Deleted;

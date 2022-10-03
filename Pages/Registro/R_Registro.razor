@@ -61,8 +61,8 @@
 
     <div class="card-horder">
         <button  type="button" class="btn btn-primary" @onclick="Nuevo"> Nuevo</button>
-        <button  type="submit" class="btn btn-soucces" > Guardar</button>
-        <button  type="button" class="btn btn-danger" @onclick="Eliminar"> Eliminar</button>
+        <button  type="submit" class="btn btn-success" > <i class="oi oi-document" />Guardar</button>
+        <button  type="button" class="btn btn-danger" @onclick="Eliminar">  Eliminar</button>
     </div>
 
 
@@ -79,8 +79,10 @@
         protected override void OnInitialized()
         {
             if(AportesId >0){
-            this.aportes.AportesId = AportesId;
-            this.Buscar();
+
+                this.aportes.AportesId = AportesId;
+                this.Buscar();
+
             }
         }
 
@@ -130,16 +132,16 @@
             
         }
         public void Eliminar(){
-            var eliminado = aportesBLL.Eliminar(aportes);
+
+            var eliminado = aportesBLL.Eliminar(this.aportes);
 
             if(eliminado){
-                      ShowNotification(
+                ShowNotification(
                 new NotificationMessage
                 {
                     Severity = NotificationSeverity.Error,
                     Summary = "Eliminado"
                 });
-
                 Nuevo();
             }else{
                 ShowNotification(

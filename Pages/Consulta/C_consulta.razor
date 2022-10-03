@@ -6,8 +6,8 @@
 
     <div  class="row">
         <select class="form-control" @bind="Filtro">
-            <option value="1"></option>
-            <option value="2"></option>
+            <option value="aportes.Persona" @onclick="Buscar">Persona</option>
+            <option value="aportes.Fecha" @onclick="Buscar">Fecha</option>
         </select>
     </div>
 
@@ -23,16 +23,24 @@
 
         <thead>
             <tr>
-                <th>RegistroId</th>
+                <th>AportesId</th>
+                <th>Fecha</th>
+                <th>Persona</th>
+                <th>Observacion</th>
+                <th>Monto</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var registro in listaAportes)
+            @foreach (var aportes in listaAportes)
             {
                 <tr>
-                    <td>@registro.RegistroId</td>
-                    <td><a href="registro/@registro.RegistroId">Ver</a></td>
+                    <td>@aportes.AportesId</td>
+                    <td>@aportes.fecha</td>
+                    <td>@aportes.Persona</td>
+                    <td>@aportes.Observacion</td>
+                    <td>@aportes.Monto</td>
+                    <td><a href="aportes/@aportes.AportesId">Ver</a></td>
                 </tr>
             }
 

@@ -20,7 +20,7 @@ builder.Services.AddDbContext<Contexto>(Options =>
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<NotificationService>();
-builder.Services.AddScoped<RegistroBLL>();
+builder.Services.AddScoped<AportesBLL>();
 
 
 var app = builder.Build();

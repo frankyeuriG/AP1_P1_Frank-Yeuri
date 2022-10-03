@@ -45,39 +45,6 @@
         }
       },
       {
-        "HashCode": -1156875207,
-        "Kind": "Components.Component",
-        "Name": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta",
-        "AssemblyName": "AP1_P1_FrankYeuri",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "C_consulta"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta"
-        }
-      },
-      {
-        "HashCode": -429829663,
-        "Kind": "Components.Component",
-        "Name": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta",
-        "AssemblyName": "AP1_P1_FrankYeuri",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -439296794,
         "Kind": "Components.Component",
         "Name": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro",
@@ -127,6 +94,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1156875207,
+        "Kind": "Components.Component",
+        "Name": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta",
+        "AssemblyName": "AP1_P1_FrankYeuri",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "C_consulta"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta"
+        }
+      },
+      {
+        "HashCode": -429829663,
+        "Kind": "Components.Component",
+        "Name": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta",
+        "AssemblyName": "AP1_P1_FrankYeuri",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
