@@ -1,7 +1,7 @@
 @page "/CRegistro"
-@inject RegistroBLL registroBLL;
+@inject AportesBLL aportesBLL;
 
-<EditForm Model="listaRegistra">
+<EditForm Model="listaAportes">
     <DataAnnotationsValidator />
 
     <div  class="row">
@@ -28,7 +28,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var registro in listaRegistra)
+            @foreach (var registro in listaAportes)
             {
                 <tr>
                     <td>@registro.RegistroId</td>
@@ -46,10 +46,10 @@
     public string Filtro { get; set; } = "";
     public string Criterio { get; set; } = "";
 
-    public List<Registro> listaRegistra { get; set; } = new List<Registro>();
+    public List<Aportes> listaAportes { get; set; } = new List<Aportes>();
     public void Buscar()
     {
-        listaRegistra = registroBLL.GetList(o => true);
+        listaAportes = aportesBLL.GetList(o => true);
     }
 
 }

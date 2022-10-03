@@ -7,12 +7,13 @@ namespace AP1_P1_FrankYeuri.DAL
 
     public class Contexto : DbContext
         {
-            public DbSet<Registro>Registro{get; set;}
+            public DbSet<Aportes>Aportes{get; set;}
         
             public Contexto(DbContextOptions<Contexto> options) : base(options)
             {   
             }
             
-        }   
+        } 
+
 
 }

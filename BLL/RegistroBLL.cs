@@ -5,42 +5,42 @@ using AP1_P1_FrankYeuri.Models;
 
 namespace AP1_P1_FrankYeuri.BLL
 {
-    public class RegistroBLL{
+    public class AportesBLL{
         private Contexto _contexto;
 
-        public RegistroBLL(Contexto contexto){
+        public AportesBLL(Contexto contexto){
             _contexto = contexto;
         }
-        public bool Existe(int registroId){
-            return _contexto.Registro.Any( o => o.RegistroId == registroId);
+        public bool Existe(int aportesId){
+            return _contexto.Aportes.Any( o => o.AportesId == aportesId);
         }
-        private bool Insertar(Registro registro){
-            _contexto.Registro.Add(registro);
+        private bool Insertar(Aportes aportes){
+            _contexto.Aportes.Add(aportes);
             return _contexto.SaveChanges()>0;
         }
-    private bool Modificar(Registro registro){
-        _contexto.Entry(registro).State =  EntityState.Modified;
+    private bool Modificar(Aportes aportes){
+        _contexto.Entry(aportes).State =  EntityState.Modified;
         return _contexto.SaveChanges()>0;
 
     }
-    public bool Guardar(Registro registro){
-        if(!Existe(registro.RegistroId))
-        return this.Insertar(registro);
+    public bool Guardar(Aportes aportes){
+        if(!Existe(aportes.AportesId))
+        return this.Insertar(aportes);
         else
-        return this.Modificar(registro);
+        return this.Modificar(aportes);
     }
-    public bool Eliminar(Registro registro){
-        _contexto.Entry(registro).State = EntityState.Deleted;
+    public bool Eliminar(Aportes aportes){
+        _contexto.Entry(aportes).State = EntityState.Deleted;
         return _contexto.SaveChanges()>0;
     }
-    public Registro? Buscar(int registroId){
-        return _contexto.Registro
-        .Where(o => o.RegistroId == registroId)
+    public Aportes? Buscar(int aportesId){
+        return _contexto.Aportes
+        .Where(o => o.AportesId == aportesId)
         .AsNoTracking()
         .SingleOrDefault(); 
     }
-    public List<Registro> GetList(Expression<Func<Registro, bool>> Criterio){
-            return _contexto.Registro
+    public List<Aportes> GetList(Expression<Func<Aportes, bool>> Criterio){
+            return _contexto.Aportes
                 .AsNoTracking()
                 .Where(Criterio)
                 .ToList();
