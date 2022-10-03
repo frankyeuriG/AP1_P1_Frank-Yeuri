@@ -45,39 +45,6 @@
         }
       },
       {
-        "HashCode": 1987600440,
-        "Kind": "Components.Component",
-        "Name": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro",
-        "AssemblyName": "AP1_P1_FrankYeuri",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "R_Registro"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro"
-        }
-      },
-      {
-        "HashCode": 1366467906,
-        "Kind": "Components.Component",
-        "Name": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro",
-        "AssemblyName": "AP1_P1_FrankYeuri",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1156875207,
         "Kind": "Components.Component",
         "Name": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta",
@@ -107,6 +74,59 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Consulta.C_consulta",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -439296794,
+        "Kind": "Components.Component",
+        "Name": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro",
+        "AssemblyName": "AP1_P1_FrankYeuri",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "R_Registro"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "AportesId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "AportesId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro"
+        }
+      },
+      {
+        "HashCode": 1691017202,
+        "Kind": "Components.Component",
+        "Name": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro",
+        "AssemblyName": "AP1_P1_FrankYeuri",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "AportesId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "AportesId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AP1_P1_FrankYeuri.Pages.Registro.R_Registro",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
