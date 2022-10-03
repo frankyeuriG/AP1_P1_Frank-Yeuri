@@ -1,3 +1,51 @@
-@page "/Regstro"
+@page "/Registro"
 @page "/Registro/{RegistroId:int}"
 
+@inject NotificationService notificationService
+
+<EditForm Model="">
+
+    <div class="card">
+        <div class="card-header"> 
+            <h3> Registro De Ocupaciones</h3>
+        </div>
+
+        <div class="card-body">
+            @*RegistroId*@
+            <div class="form-row align-items-center">
+                <div class="col">
+                    <div class="mb-3">
+                        <label>OcupacionId</label>
+                        <div class="input-group">
+                            <InputNumber @bind-Value="registro.RegistroId" class="form-control col-4" />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary" type="button" @onclick="Buscar"><i class="oi oi-magnifying-glass" /> Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+
+
+</EditForm>
+
+
+@code{
+
+
+
+    /* ShowNotification(
+            new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "No Guardo"
+            });*/
+    void ShowNotification(NotificationMessage message)
+    {
+        notificationService.Notify(message);
+
+    }
+}
