@@ -12,10 +12,10 @@
     </div>
 
     <label class="form-control">Criterio</label>
-    <input type="text" class="form-control" @bind="Criterio">
+    <input type="text" class="form-control" @bind="aportes.Persona">
 
     <div>
-        <button type="button" @onclick="Buscar"> <i>Buscar</i>
+        <button type="button" @onclick="Buscar"><i class="oi oi-magnifying-glass" /> <i>Buscar</i>
         </button>
     </div>
 
@@ -53,6 +53,8 @@
 {
     public string Filtro { get; set; } = "";
     public string Criterio { get; set; } = "";
+
+    public Aportes aportes {get; set;} = new Aportes();
 
     public List<Aportes> listaAportes { get; set; } = new List<Aportes>();
     public void Buscar()
